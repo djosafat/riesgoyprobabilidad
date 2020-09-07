@@ -1,0 +1,15 @@
+z <- matrix(runif(100),10,10)
+persp(z)
+persp(z,col = 2)
+colores <- matrix(rainbow(100),10,10)
+persp(z,col = colores)
+
+x <- seq(0,5,0.01)
+y <- seq(0,5,0.01)
+z_aux <- x^2+y^2
+n <- length(z_aux)
+z <- matrix(z_aux)
+persp(z)
+persp(z,col = 2)
+colores <- matrix(rainbow(100),10,10)
+persp(z,col = colores)
